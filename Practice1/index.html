@@ -13,10 +13,31 @@
     </style>
   </head>
   <body>
+
     <!-- TOP BAR -->
-    
-
-
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown-menu" data-dropdown-menu>
+          <li class="menu-text">Site Title</li>
+          <li>
+            <a href="#">One</a>
+            <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
 
     <!--TYPOGRAPHY-->
     <div class="row">
@@ -209,6 +230,7 @@
             <span class="slider-fill" data-slider-fill></span>
           </div>
         </form>
+    </div>
 
         <div class="row">
           <!-- TABLES -->
@@ -266,7 +288,105 @@
           </ul>
         </div>
 
-    </div>
+        <hr />
+
+        <div class="row">
+          <!-- CALLOUTS -->
+          <div class="callout">
+            <p>This is an example of a callout</p>
+          </div>
+          <div class="callout secondary">
+            <p>This is an example of a callout</p>
+          </div>
+          <div class="callout warning">
+            <p>This is an example of a callout</p>
+          </div>
+          <div class="callout success">
+            <p>This is an example of a callout</p>
+          </div>
+          <div class="callout alert">
+            <p>This is an example of a callout</p>
+          </div>
+
+          <hr />
+          <!-- PROGRESS BARS -->
+          <div class="success progress" role="progressbar">
+            <div class="progress-meter" style="width: 25%">
+              <p class="progress-meter-text">25%</p>
+            </div>
+          </div>
+          <div class="alert progress" role="progressbar">
+            <div class="progress-meter" style="width: 35%">
+              <p class="progress-meter-text">35%</p>
+            </div>
+          </div>
+          <div class="warning progress" role="progressbar">
+            <div class="progress-meter" style="width: 55%">
+              <p class="progress-meter-text">55%</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- LABELS -->
+
+          <span class="secondary label">Secondary Label</span>
+          <span class="success label">Success Label</span>
+          <span class="alert label">Alert Label</span>
+          <span class="warning label">Warning Label</span>
+
+          <hr />
+
+          <!-- BADGES -->
+
+          <span class="secondary badge">Secondary Badge</span>
+          <span class="success badge">Success Badge</span>
+          <span class="alert badge">Alert Badge</span>
+          <span class="warning badge">Warning Badge</span>
+
+          <hr />
+
+          <!-- BREADCRUMBS -->
+
+          <nav role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Posts</a></li>
+              <li>My Post</li>
+            </ul>
+          </nav>
+
+          <hr />
+
+          <!-- PAGINATION -->
+
+          <ul class="pagination" role="navigation">
+            <li class="disabled">Previous</li>
+            <li class="current">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="ellipsis"></li>
+            <li><a href="#">13</a></li>
+            <li><a href="#">14</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+        </div>
+        <br />
+
+        <!-- GRID <-->
+
+        <div class="row">
+          <div class="columns large-8 small-8 medium-6">
+            <h3>Main Column</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae, labore doloremque ex ipsa quae
+              odio iusto vitae veniam, ut velit sequi! Quod quisquam unde cupiditate iusto sapiente deserunt expedita?</p>
+          </div>
+          <div class="columns large-4 small-4 medium-6">
+            <h3>Sidebar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae, labore doloremque</p>
+          </div>
+        </div>
 
 
     <div class="spacer"></div>
