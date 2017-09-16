@@ -1,4 +1,21 @@
 
+body {
+  background-color: #f4f4f4;
+}
+
+.header {
+  border-bottom: 3px #ccc solid;
+}
+
+.social {
+  float: right;
+  padding-top: 13px;
+}
+
+.social img {
+  width: 40px;
+}
+
 .top-bar {
   background-color: #000000;
 }
@@ -9,4 +26,41 @@
 
 a {
   color: #ffffff;
+}
+
+.showcase {
+  padding: 40px 0;
+  height: 400px;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  background: #f4f4f4 url('../img/showcase.jpg') no-repeat top center;
+  border-bottom: 3px #ccc solid;
+}
+
+.showcase h1 {
+  font-size: 50px;
+}
+
+.showcase p {
+  font-size: 22px;
+  width: 90%;
+}
+
+.boxes i {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.boxes {
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  height: 80px;
+  padding-top: 30px;  
 }
