@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+
 }
 
 .showcase {
@@ -62,5 +62,15 @@ footer {
   color: #fff;
   text-align: center;
   height: 80px;
-  padding-top: 30px;  
+  padding-top: 30px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.side-menu h4{
+  background: #42a5db;
+  color: #fff;
+  padding: 8px;
 }
