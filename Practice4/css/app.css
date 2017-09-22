@@ -7,6 +7,10 @@ a:hover {
   color: #cccccc;
 }
 
+h3 {
+  border-bottom: 1px solid #eee;
+}
+
 .menu {
   margin-top: 30px;
   padding: 10px;
