@@ -5,6 +5,9 @@ url: /
 
 <script>
   $(document).ready(function() {
+      // Hide message
+      $('#msg').hide();
+
       if(localStorage['todos']){
         var todos = JSON.parse(localStorage['todos']);
       } else {
@@ -12,7 +15,7 @@ url: /
       }
 
       function appendTodo(todo){
-        $('#todoList').append("<li>"+todo+"</li>");
+        $('#todoList').append("<li><a data-todo='"+todo+"' id='aTodo' href=''>"+todo+"</a></li>");
       }
 
       for(var i = 0; i < todos.length; i++){
@@ -33,7 +36,24 @@ url: /
 
           // Reset form
           $('#todo').val("").focus();
-      })
+
+          // Display message
+          $('#msg').fadeIn();
+      });
+
+      $(document).on('click', '#aTodo', function(){
+        var todos = JSON.parse(localStorage.getItem('todos'));
+        var cur_todo = $(this).data('todo');
+        $(this).parent('li').css('border', 0).html("");
+        $(this).html("");
+        for(var i = 0; i < todos.length; i++ ){
+          if(cur_todo == todos[i]){
+            todos.splice(i, 1);
+          }
+        }
+        localStorage.setItem('todos', JSON.stringify(todos));
+
+      });
   });
 </script>
 
