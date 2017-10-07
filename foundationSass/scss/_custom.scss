@@ -193,3 +193,38 @@
     color: $extra;
   }
 }
+
+/* Section A */
+.section-a {
+  margin-top: 30px;
+  padding: 50px 0;
+  background: $light-gray;
+}
+
+/* Section B */
+.section-b {
+  background: $dark-gray;
+  color: $white;
+  padding: 50px 0;
+  text-align: center;
+
+  h1 {
+    margin-left: 13rem;
+  }
+}
+
+/* Section C */
+.section-c {
+  background: $primary;
+  color: $white;
+  padding: 50px 0;
+  text-align: center;
+
+  .fa {
+    font-size: 90px;
+  }
+}
+
+footer {
+  padding: 40px 0;
+}
