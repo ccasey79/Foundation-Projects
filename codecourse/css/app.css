@@ -1,0 +1,18 @@
+
+.columns {
+  min-height: 100px;
+}
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+#site-header {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.wrapper {
+  margin-bottom: 20px;
+}
